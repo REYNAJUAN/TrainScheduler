@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Train Scheduler Exercise</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+     
+  <div class="jumbotron">
+            <h1>California Coastliner</h1>
+        </div>
+
+            <!--results panel-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3>Train Schedule</h3>
+                </div>
+                <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6"></div>
+                        <div class="col-md-3"></div>
+                      </div>
+
+                <div class="panel-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Train Name</th>
+                                <th>Destination</th>
+                                <th>Frecuency (min)</th>
+                                <th>Next Arrival</th>
+                                <th>Minutes Away</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Coast Starlight</td>
+                                <td>Seattle</td>
+                                <td>180</td>
+                                <td>8am</td>
+                                <td>45</td>
+                            </tr>
+
+                            <tr>
+                                <td>Coast Starlight</td>
+                                <td>Seattle</td>
+                                <td>180</td>
+                                <td>8am</td>
+                                <td>45</td>
+                            </tr>
+
+                            <tr>
+                                <td>Coast Starlight</td>
+                                <td>Seattle</td>
+                                <td>180</td>
+                                <td>8am</td>
+                                <td>45</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </br>
+
+    <!--search panel-->
+    <div class="container-fluid">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3>Add Train</h3>
+            </div>
+                <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6"></div>
+                        <div class="col-md-3"></div>
+                      </div>
+
+            <div class="panel-body">
+                <form>
+                    <div class="form-group">
+                        <label for="trainName">Train Name</label>
+                        <input type="text" class="form-control" id="TrainName-input">
+                        <!--<small id="trainlHelp" class="form-text text-muted">Enter your search.</small>-->
+                    </div>
+
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input type="text" class="form-control" id="Destination-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="firstTrainTime">First Train Time (HH:mm-military time)</label>
+                        <input type="text" class="form-control" id="Time-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="frecuency">Frecuency</label>
+                        <input type="text" class="form-control" id="Frecuency-input">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Search</button>
+                    <button type="submit" class="btn btn-primary">Clear</button>
+                </form>
+            </div>
+        </div>
+
+            <!--firebase-->
+            <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+           <!--javascript-->
+            <script src="/assets/javascript/TrainScheduler.js"></script>
+</body>
+
+</html>
